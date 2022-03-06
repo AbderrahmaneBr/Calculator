@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="Calculator">
+        <div class="Screen">
+            <p id="Screen"></p><span>|</span>
+        </div>
+        <div class="Keyboard">
+            <div class="Numbers">
+                <div class="numbers">
+                    <button id="AC_Button" onclick="insert('c')">AC</button>
+                    <button onclick="insert('/')">÷</button>
+                    <button onclick="insert('*')">x</button>
+                    <button onclick="insertNum(this)">7</button>
+                    <button onclick="insertNum(this)">8</button>
+                    <button onclick="insertNum(this)">9</button>
+                    <button onclick="insertNum(this)">4</button>
+                    <button onclick="insertNum(this)">5</button>
+                    <button onclick="insertNum(this)">6</button>
+                    <button onclick="insertNum(this)">1</button>
+                    <button onclick="insertNum(this)">2</button>
+                    <button onclick="insertNum(this)">3</button>
+                </div>
+                <div class="zero">
+                    <button id="zero" onclick="insertNum(this)">0</button>
+                    <button id="comma" onclick="insertNum(this)">.</button>
+                </div>
+                </div>
+            <div class="Signs">
+                
+                <button onclick="insert('<-')">←</button>
+                <button onclick="insert('+')">+</button>
+                <button onclick="insert('-')">-</button>
+                <button id="equal_button" onclick="calc()" style="height: 205px;">=</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
